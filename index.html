@@ -8,13 +8,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
+  </head>
   <body>
     <h1>Monthly Expense Calculator</h1>
 
     <div class="container">
+      <!-- Initial Budget Box -->
+      <div class="box">
+        <h2>Set Your Initial Budget</h2>
+        <label for="budget">Initial Budget:</label>
+        <input type="number" id="budget" placeholder="Enter initial budget" />
+        <button onclick="setInitialBudget()">Set Budget</button>
+      </div>
+
       <!-- Summary Box -->
       <div class="box summary">
         <div>
@@ -28,6 +35,14 @@
         <div>
           <p>Total Balance:</p>
           <p id="balance" class="amount">P 0.00</p>
+        </div>
+        <div>
+          <p>Budget Remaining:</p>
+          <p id="budgetRemaining" class="amount">P 0.00</p>
+          <div class="transaction-actions">
+            <i class="fas fa-edit" onclick="editBudget()"></i>
+            <i class="fas fa-trash" onclick="deleteBudget()"></i>
+          </div>
         </div>
       </div>
 
@@ -94,6 +109,6 @@
         </table>
       </div>
     </div>
-    <script src="script.js"></script>
+
   </body>
 </html>
