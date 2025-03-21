@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #ffc107;
+  --background-color: #f0f4f7;
+  --card-color: #ffffff;
+  --text-color: #333333;
+  --income-color: #2ecc71;
+  --expense-color: #e74c3c;
+  --hover-color: #388e3c;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-image: url("https://tamtamandfriends.wordpress.com/wp-content/uploads/2020/03/50b2a4e2-201e-4774-8958-4b30e1333352.gif?w=850");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 40px;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: black;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  width: 100%;
+  margin-top: 30px;
+}
+.box {
+  background-color: rgba(218, 218, 218, 0.795);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+}
+button:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 14px;
+  text-align: center;
+  font-size: 16px;
+}
+th {
+  background-color: var(--secondary-color);
+  color: white;
+}
+.income {
+  color: var(--income-color);
+}
+.expense {
+  color: var(--expense-color);
+}
+input[type="text"],
+input[type="number"] {
+  padding: 12px;
+  margin: 8px 0;
+  width: 97%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: var(--primary-color);
+}
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+.radio-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+input[type="radio"] {
+  margin-right: 5px;
+}
+summary {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.summary p {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 600;
+}
+.summary .amount {
+  font-size: 24px;
+  font-weight: bold;
+}
+.category-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 24px;
+}
+.category-icons i {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.category-icons i:hover {
+  transform: scale(1.2);
+}
+.transaction-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-left: 85px;
+  margin-top: 0px;
+  gap: 15px;
+}
+.transaction-actions i {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.transaction-actions i:hover {
+  transform: scale(1.2);
+}
