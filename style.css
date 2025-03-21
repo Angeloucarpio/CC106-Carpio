@@ -142,8 +142,7 @@ summary {
   transform: scale(1.2);
 }
 .transaction-actions {
-  display: flex
-;
+  display: flex;
   justify-content: flex-start;
   align-items: stretch;
   margin-left: 85px;
