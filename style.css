@@ -157,3 +157,7 @@ summary {
 .transaction-actions i:hover {
   transform: scale(1.2);
 }
+td.transaction-actions {
+  margin-left: 0px;
+  margin-top: 4px;
+}
